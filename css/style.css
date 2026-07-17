@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Catppuccin Mocha Theme - Unicode Finder
+   ========================================================================== */
+
+/* Reseteo básico y tipografía */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e2e; /* Base */
+    color: #cdd6f4;           /* Text */
+    display: flex;
+    flex-direction: column;   /* Cambiado a columna para distribuir footer abajo */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px 20px 20px; /* Un poco más de margen arriba */
+}
+
+/* Contenedor Principal */
+.container {
+    background-color: #181825; /* Mantle */
+    border: 1px solid #313244;  /* Surface 0 */
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    flex-grow: 0; /* Evita que el contenedor se estire innecesariamente */
+}
+
+/* Título y Descripción */
+h1 {
+    color: #cba6f7; /* Lavender */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.container p {
+    color: #a6adc8; /* Subtext 0 */
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Formulario de Entrada */
+label {
+    display: block;
+    color: #bac2de; /* Subtext 1 */
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #313244; /* Surface 0 */
+    border: 2px solid #45475a;  /* Surface 1 */
+    border-radius: 8px;
+    color: #cdd6f4;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #cba6f7; /* Lavender */
+    box-shadow: 0 0 0 3px rgba(203, 166, 247, 0.25);
+}
+
+/* Botón de Acción */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #cba6f7; /* Lavender */
+    color: #11111b;           /* Crust */
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #b4befe; /* Light Lavender */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Resultado */
+#output {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #11111b; /* Crust */
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 1.2rem;
+    color: #a6e3a1; /* Green */
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+    border: 1px dashed #45475a;
+}
+
+#output:empty {
+    display: none;
+}
+
+/* ==========================================================================
+   Footer Styles
+   ========================================================================== */
+footer {
+    margin-top: auto; /* Empuja el footer hacia el fondo de la pantalla */
+    padding-top: 40px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #6c7086; /* Overlay 0 - un tono gris más sutil para que no compita */
+}
+
+footer a {
+    color: #89b4fa; /* Blue de Catppuccin */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    border-bottom: 1px dotted transparent;
+}
+
+footer a:hover {
+    color: #89dceb; /* Sky - tono celeste al pasar el cursor */
+    border-bottom-color: #89dceb;
+}
